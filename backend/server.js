@@ -6,6 +6,7 @@ const workoutRoute = require('./routes/workoutRoutes');
 const app = express();
 
 // middleware
+// to access body of the request 
 app.use(express.json());
 app.use((req,res,next)=>{
     console.log(req.url, req.method);
